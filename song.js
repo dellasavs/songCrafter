@@ -3,7 +3,7 @@ var testInstance = new AudioSynth;
 var inst = []; 
 inst.push(testInstance.createInstrument('piano'))
 inst.push(testInstance.createInstrument('piano'))
-inst.push(testInstance.createInstrument('acoustic'))
+inst.push(testInstance.createInstrument('perc'))
 var measures = [];
 var bars = [];
 var ticker = 1;

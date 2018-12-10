@@ -347,4 +347,19 @@ Synth.loadSoundProfile({
 				)
 		);
 	}
+}, 
+{
+	name: 'perc',
+	attack: function() { return .002 },
+	dampen: function(sampleRate, frequency) { return 1; },
+	wave: function(i, sampleRate, frequency) {
+		var base = this.modulate[0];
+		var mod = this.modulate.slice(1);
+		return mod[7](
+			i,
+			sampleRate,
+			frequency,
+			1000
+		);
+	}
 });
